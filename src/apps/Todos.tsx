@@ -78,7 +78,7 @@ const Todos: React.FC = () => {
           <p>Nothing yet.</p>
         ) : (
           [...todos]
-            .sort((a, b) => (a.done ? 1 : -1))
+            .sort((a) => (a.done ? 1 : -1))
             .map(({ id, text, done }) => (
               <div
                 key={id}
